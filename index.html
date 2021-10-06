@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common" xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="en-us">
+  <head>
+    <title>Cyber Days - Medipiel</title>
+
+    <vtex:metaTags/>
+    <link rel="icon" href="https://medipielsa.vteximg.com.br/arquivos/medipiel-favicon-02.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://www.medipiel.com.co/files/medipiel-global-styles.css" rel="stylesheet" />
+    <link href="https://www.medipiel.com.co/files/main.chunk.css" rel="stylesheet" />
+    <link href="https://www.medipiel.com.co/arquivos/main-m.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/arquivos/slick-m.css"/>
+    <link rel="stylesheet" href="/arquivos/slick-theme-m.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
+
+    <style>
+        .top-banner{
+            padding-bottom: 10px;
+        }
+
+        .x-container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .x-container-fluid {
+            max-width: 95%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .x-grid-row.content-center {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .x-grid-row [class*=x-grid-col-] {
+            border: none;
+            padding: 5px;
+            z-index: 1;
+        }
+
+        .x-grid-row .x-grid-col-33:not(.responsivent) {
+            border-bottom: none;
+        }
+
+        @media (max-width: 768px){
+            .x-grid-col-25 {
+                max-width: 50% !important;
+            }
+        }
+    </style>
+
+    <script type="text/javascript">
+              $(document).ready(function(){
+    
+                $('.slider-header').slick({
+                      dots: true,
+                      infinite: true,
+                      speed: 300,
+                      slidesToShow: 1,
+                      slidesToScroll: 1,
+                      autoplay: true,
+                      autoplaySpeed: 4000,
+                    });
+    
+    
+    
+    
+                $('.slider-cat-black').slick({
+                      dots: true,
+                      infinite: false,
+                      slidesToShow: 6,
+                      slidesToScroll: 6,   
+                      responsive: [
+                        {
+                          breakpoint: 1024,
+                          settings: {
+                              slidesToShow: 4,
+                              slidesToScroll: 4,
+                          }
+                        },
+                        {
+                          breakpoint: 600,
+                          settings: {      
+                              slidesToShow: 3,
+                              slidesToScroll: 3,                    
+                          }
+                        },
+                        {
+                          breakpoint: 480,
+                          settings: {
+                              slidesToShow: 3,
+                              slidesToScroll: 3,
+                          }
+                        }
+                      ]
+                    });
+
+
+          $('.slide-black-bottom').slick({
+                      dots: true,
+                      infinite: true,
+                      speed: 300,
+                      slidesToShow: 3,
+                      slidesToScroll: 3,
+                      autoplay: true,
+                      autoplaySpeed: 4000,
+                      responsive: [
+                        {
+                          breakpoint: 1024,
+                          settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                          }
+                        },
+                        {
+                          breakpoint: 600,
+                          settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                          }
+                        },
+                        {
+                          breakpoint: 480,
+                          settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                          }
+                        }
+                      ]
+                    });
+
+                    
+                $('.slider-marcas').slick({
+                      dots: false,
+                      infinite: true,
+                      autoplay: true,
+                      autoplaySpeed: 5000,
+                      speed: 100,
+                      slidesToShow: 5,
+                      slidesToScroll: 1,
+                      responsive: [
+                        {
+                          breakpoint: 1024,
+                          settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 4,
+                            infinite: true,
+                            dots: true
+                          }
+                        },
+                        {
+                          breakpoint: 600,
+                          settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                          }
+                        },
+                        {
+                          breakpoint: 480,
+                          settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                          }
+                        }
+                      ]
+                    });
+
+                });
+
+
+          $(document).ready(function(){
+
+                    $('#vitrina-productos-convenio .slider-marcas').slick('unslick');
+                });
+            </script>
+</head>
+<body>
+
+<div id="header">
+   <!--Preheader-->
+            <div>
+                <vtex.cmc:preheader />
+            </div>
+        <!--Preheader -->
+        <!-- Btn Whatsapp-->
+            <div>
+                <vtex.cmc:whatsapp />
+            </div>
+        <!-- Btn Whatsapp-->
+</div>
+
+<div class="contenedor-General">
+        <!--Banner principal-->
+        <div class="x-container-fluid top-banner hover-2">
+                <a>
+                    <picture>
+                    <source media="(min-width:768px)" srcset="/arquivos/banner-principal-Desktop-live.jpg"  style="width:100%;" /><!--Desktop*/-->
+                    <img src="/arquivos/banner-principal-Mobile-live.jpg" alt="Banner principal" style="width:100%;" /><!--Mobile-->
+                    </picture>
+                </a>
+        </div>
+
+        <!--Donde iría la conexión-->
+
+        <div class="x-container-fluid hover-2">
+            <div id="live-shopping-app" />
+            <script src="https://mtumok1rr4.execute-api.us-east-1.amazonaws.com/Prod/livestreamingshopping?id=33d4c63e-224b-429a-813d-290dc37f8935&#38;account=medipielsa&#38;inactiveSidebarProducts=true&#38;inactiveProductsCarousel=false&#38;inactivateChat=true&#38;inactivateLike=true&#38;inactivateViewers=true&#38;isInfinite=true&#38;time=10&#38;pdp=true"></script>
+        </div>
+
+
+    <!-- Categorías de los productos -->
+    <div class="x-container">
+        <div class="x-grid-row">
+                <div class="x-grid-col-25 hover-1">
+                    <a href="#">
+                        <img src="/arquivos/prod-cat-1.jpg" alt="Categoria 1" style="width:100%;" />
+                    </a>
+                </div>
+
+                <div class="x-grid-col-25 hover-1">
+                    <a href="#">
+                        <img src="/arquivos/prod-cat-2.jpg" alt="Categoria 2" style="width:100%;" />
+                    </a>
+                </div>
+
+                <div class="x-grid-col-25 hover-1">
+                    <a href="#">
+                        <img src="/arquivos/prod-cat-3.jpg" alt="Categoria 3" style="width:100%;" />
+                    </a>
+                </div>
+
+                <div class="x-grid-col-25 hover-1">
+                    <a href="#">
+                        <img src="/arquivos/prod-cat-4.jpg" alt="Categoria 4" style="width:100%;" />
+                    </a>
+                </div>
+        </div>
+    </div>
+
+    <!-- Banner Concurso -->
+    <div class="x-container-fluid hover-2">
+        <a href="#">
+            <picture>
+                <source media="(min-width:768px)" srcset="/arquivos/Banner-concurso-Desktop.jpg"  style="width:100%;" /><!--Desktop*/-->
+                <img src="/arquivos/Banner-concurso-mobile.jpg" alt="Concurso Actualizar Base de datos" style="width:100%;" /><!--Mobile-->
+            </picture>
+        </a>
+    </div>
+
+
+
+</div>
+
+    <script src="https://www.medipiel.com.co/files/runtime-main.js"></script>
+    <script src="https://www.medipiel.com.co/files/2.chunk.js"></script>
+    <script src="https://www.medipiel.com.co/files/main.chunk.js"></script>
+     <!-- Scripts -->
+    <script src="/arquivos/jquery-m.min.js"></script>
+    <script src="/arquivos/slick-m.min.js"></script>
+    <script src="/arquivos/zuck-m.min.js"></script>
+    <script src="/arquivos/config-m.js"></script>
+    <script src="/files/histories-data-h.js"></script>
+  
+     <script>
+     $(".prateleira").find("ul li.helperComplement").remove();
+      $(".prateleira ul li").replaceWith(function() { 
+          return "<div>" + this.innerHTML + "</div>"; 
+      });
+    
+      $(".prateleira ul").replaceWith(function() { 
+          return '<div class="slider-marcas">' + this.innerHTML + "</div>"; 
+      });
+     </script>   
+  
+  </body>
+</html>
